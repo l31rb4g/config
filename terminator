@@ -1,0 +1,34 @@
+[global_config]
+  borderless = True
+  dbus = False
+  inactive_color_offset = 1.0
+  title_font = Sans 8
+  title_hide_sizetext = True
+  title_receive_bg_color = "#ce5c00"
+  title_transmit_bg_color = "#3465a4"
+  title_use_system_font = False
+  use_custom_url_handler = True
+  window_state = maximise
+[keybindings]
+  move_tab_left = <Shift><Super>Left
+  move_tab_right = <Shift><Super>Right
+  next_tab = <Shift>Right
+  prev_tab = <Shift>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono 8
+    scrollback_lines = 3000
+    scrollbar_position = hidden
+    use_system_font = False
