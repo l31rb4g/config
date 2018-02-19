@@ -19,6 +19,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 "set clipboard=unnamed
+set hlsearch
 set number relativenumber
 set nu
 set backspace=indent,eol,start
@@ -41,5 +42,6 @@ let NERDTreeShowHidden=1
 
 " Mapping
 "nnoremap # :set hlsearch!<CR>
+map @ :nohl<CR>
 map <F3> :NERDTreeToggle<CR>
 
