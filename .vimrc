@@ -4,6 +4,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdcommenter'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let mapleader = ','
@@ -13,7 +15,6 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-"set hlsearch
 "set clipboard=unnamed
 set number relativenumber
 set nu
@@ -21,10 +22,11 @@ set backspace=indent,eol,start
 
 syntax on
 
+
 augroup numbertoggle
- autocmd!
- autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
- autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
 
