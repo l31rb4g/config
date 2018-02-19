@@ -13,15 +13,13 @@ set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+"set hlsearch
 "set clipboard=unnamed
+set number relativenumber
 set nu
 set backspace=indent,eol,start
+
 syntax on
-
-
-
-" Line numbering
-set number relativenumber
 
 augroup numbertoggle
  autocmd!
@@ -31,5 +29,10 @@ augroup END
 
 
 " Plugin config
-map <F3> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+
+
+" Mapping
+nnoremap # :set hlsearch!<CR>
+map <F3> :NERDTreeToggle<CR>
+
