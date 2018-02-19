@@ -40,6 +40,6 @@ let NERDTreeShowHidden=1
 
 
 " Mapping
-nnoremap # :set hlsearch!<CR>
+"nnoremap # :set hlsearch!<CR>
 map <F3> :NERDTreeToggle<CR>
 
