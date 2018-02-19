@@ -15,7 +15,7 @@ let mapleader = ','
 let g:airline_theme='jellybeans'
 
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 
 set expandtab
