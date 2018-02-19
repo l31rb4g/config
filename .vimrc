@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 let mapleader = ','
+let g:airline_theme='jellybeans'
 
 set expandtab
 set softtabstop=4
