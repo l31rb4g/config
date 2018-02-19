@@ -6,7 +6,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'dracula/vim', {'as': 'dracula'}
 call plug#end()
+
 
 let mapleader = ','
 let g:airline_theme='jellybeans'
@@ -21,7 +23,9 @@ set number relativenumber
 set nu
 set backspace=indent,eol,start
 
+
 syntax on
+color dracula
 
 
 augroup numbertoggle
