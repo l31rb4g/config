@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'dracula/vim', {'as': 'dracula'}
+    Plug 'Yggdroot/indentLine'
 call plug#end()
 
 
