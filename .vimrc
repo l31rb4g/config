@@ -13,12 +13,14 @@ call plug#end()
 let mapleader = ','
 let g:airline_theme='jellybeans'
 
+let NERDTreeShowHidden=1
+
+
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-"set clipboard=unnamed
 set hlsearch
 set number relativenumber
 set nu
@@ -36,12 +38,7 @@ augroup numbertoggle
 augroup END
 
 
-" Plugin config
-let NERDTreeShowHidden=1
-
-
 " Mapping
-"nnoremap # :set hlsearch!<CR>
 map @ :nohl<CR>
 map <F3> :NERDTreeToggle<CR>
 
