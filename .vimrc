@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 
-"let mapleader = ','
+let mapleader = ','
 let g:airline_theme='jellybeans'
 
 let NERDTreeShowHidden=1
