@@ -41,7 +41,7 @@ augroup END
 
 
 " Mapping
+map ! :nohl<CR>
 map # *``
-map @ :nohl<CR>
 map <F3> :NERDTreeToggle<CR>
 
