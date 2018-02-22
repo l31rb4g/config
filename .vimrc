@@ -29,8 +29,7 @@ set nu
 set backspace=indent,eol,start
 set nofoldenable
 set foldmethod=indent
-
-
+set clipboard^=unnamed,unnamedplus
 
 syntax on
 color dracula
