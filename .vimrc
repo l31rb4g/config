@@ -12,8 +12,7 @@ call plug#end()
 
 
 let mapleader = ','
-let g:airline_theme='jellybeans'
-let foldmethod=indent
+let g:airline_theme = 'jellybeans'
 
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
@@ -29,6 +28,7 @@ set number relativenumber
 set nu
 set backspace=indent,eol,start
 set nofoldenable
+set foldmethod=indent
 
 
 
