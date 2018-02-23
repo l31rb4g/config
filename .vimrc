@@ -46,7 +46,7 @@ augroup END
 map ! :nohl<CR>
 map # *``
 map <F3> :NERDTreeToggle<CR>
-map <F4> :!/home/gpaladino/www/_/scripts/tags.py
+map <F4> :!/home/gpaladino/www/_/scripts/tags.py<CR>
 map <F9> <C-w><C-]><C-w>L
 map <F12> @q
 
