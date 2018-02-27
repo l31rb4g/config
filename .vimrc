@@ -50,4 +50,4 @@ map <F3> :NERDTreeToggle<CR>
 map <F4> :!~/scripts/tags.py<CR>
 map <F9> <C-w><C-]><C-w>L
 map <F12> @q
-
+map <C-Up> <C-e>
