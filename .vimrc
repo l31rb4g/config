@@ -54,7 +54,7 @@ map <C-Up> <C-y>
 map <C-Down> <C-e>
 
 nmap | 20k
-nmap \\ 20j
+nmap \ 20j
 
 
 "" Move visual block
