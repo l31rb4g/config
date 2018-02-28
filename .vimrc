@@ -53,8 +53,7 @@ map <F12> @q
 map <C-Up> <C-y>
 map <C-Down> <C-e>
 
-nmap z 10j
-nmap Z 01k
+nmap z 20j
 
 
 "" Move visual block
