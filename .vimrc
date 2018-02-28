@@ -53,6 +53,8 @@ map <F12> @q
 map <C-Up> <C-y>
 map <C-Down> <C-e>
 
+nmap z 10j
+
 
 "" Move visual block
 vnoremap J :m '>+1<CR>gv=gv
