@@ -53,7 +53,7 @@ map <F12> @q
 map <C-Up> <C-y>
 map <C-Down> <C-e>
 
-nmap | 20k
+nmap \| 20k
 nmap \ 20j
 
 
