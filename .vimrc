@@ -52,4 +52,5 @@ map <F9> <C-w><C-]><C-w>L
 map <F12> @q
 map <C-Up> <C-y>
 map <C-Down> <C-e>
-map <A-j> 10j
+map <T-j> 10j
+map <T-k> 10k
