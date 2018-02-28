@@ -54,6 +54,7 @@ map <C-Up> <C-y>
 map <C-Down> <C-e>
 
 nmap z 10j
+nmap Z 01k
 
 
 "" Move visual block
