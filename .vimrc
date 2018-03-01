@@ -46,8 +46,9 @@ augroup END
 " Mapping
 map ! :nohl<CR>
 map # *``
-map <F3> :NERDTreeToggle<CR>
-map <F4> :!~/scripts/tags.py<CR>
+map <F3> :NERDTreeToggle<cr>
+map <F4> :!~/scripts/tags.py<cr>
+imap <F5> <esc>:w<cr>i
 map <F9> <C-w><C-]><C-w>L
 map <F12> @q
 map <C-Up> <C-y>
@@ -58,5 +59,5 @@ nmap \ 20j
 
 
 "" Move visual block
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<cr>gv=gv
+vnoremap K :m '<-2<cr>gv=gv
