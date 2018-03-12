@@ -53,7 +53,7 @@ map <F9> <C-w><C-]><C-w>L
 map <F12> @q
 map <C-Up> <C-y>
 map <C-Down> <C-e>
-vmap D "dd
+vmap D "_d
 nmap \| 20k
 nmap \ 20j
 
