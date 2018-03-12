@@ -50,7 +50,8 @@ map <f3> :NERDTreeToggle<cr>
 map <f4> :!~/scripts/tags.py<cr>
 imap <f5> <esc>:w<cr>i
 map <f9> <c-w><C-]><c-w>L
-map <f10> <c-w>v<c-w>l:!ag foo
+" map <f10> <c-w>v<c-w>l:!ag foo
+map <f10> !xdotool "control+shift+o"
 map <f12> @q
 map <c-up> <c-y>
 map <c-down> <c-e>
