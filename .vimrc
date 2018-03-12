@@ -61,3 +61,4 @@ nmap \ 20j
 "" Move visual block
 vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
+vnoremap D "_d
