@@ -36,7 +36,6 @@ set colorcolumn=80
 syntax on
 color dracula
 
-
 augroup numbertoggle
     autocmd!
     autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
