@@ -32,6 +32,7 @@ set foldmethod=indent
 set clipboard^=unnamed,unnamedplus
 set colorcolumn=80
 
+
 syntax on
 color dracula
 
