@@ -50,8 +50,7 @@ map <f3> :NERDTreeToggle<cr>
 map <f4> :!~/scripts/tags.py<cr>
 imap <f5> <esc>:w<cr>i
 map <f9> <c-w><C-]><c-w>L
-" map <f10> <c-w>v<c-w>l:!ag foo
-nnoremap <f10> viwy:!~/scripts/find_in_project.sh<cr><cr>
+nnoremap <f10> viw"wy:!~/scripts/find_in_project.sh @w<cr><cr>
 map <f12> @q
 map <c-up> <c-y>
 map <c-down> <c-e>
