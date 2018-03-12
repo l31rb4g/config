@@ -47,7 +47,7 @@ augroup END
 map ! :nohl<cr>
 map # *``
 map <f3> :NERDTreeToggle<cr>
-map <f4> :!~/scripts/tags.py<cr>
+map <f4> :!~/scripts/tags.py<cr><cr>
 imap <f5> <esc>:w<cr>i
 map <f9> <c-w><C-]><c-w>L
 nnoremap <f10> viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
