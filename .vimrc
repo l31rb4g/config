@@ -63,5 +63,3 @@ nmap \ 20j
 vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
 
-command Ag !~/scripts/find_in_project.sh <f-args>
-
