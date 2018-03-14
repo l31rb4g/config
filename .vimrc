@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'dracula/vim', {'as': 'dracula'}
     Plug 'Yggdroot/indentLine'
     Plug 'Valloric/YouCompleteMe'
+    Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 
