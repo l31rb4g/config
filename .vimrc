@@ -15,9 +15,9 @@ call plug#end()
 
 let mapleader = ','
 let g:airline_theme = 'jellybeans'
-
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
+let g:syntastic_quiet_messages = {"!level": "errors"}
 
 
 set expandtab
