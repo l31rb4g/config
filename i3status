@@ -8,7 +8,9 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
+        output_format = "i3bar"
+        separator = ' + '
 }
 
 order += "disk /"
@@ -18,12 +20,12 @@ order += "tztime local"
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
-        format_up = "%ip (%speed)"
+        format_up = "%ip"
         format_down = "E: down"
 }
 
 tztime local {
-        format = "%d/%m/%Y %H:%M"
+        format = "%d/%m/%Y %H:%M:%S"
 }
 
 load {
@@ -33,3 +35,4 @@ load {
 disk "/" {
         format = "%avail"
 }
+

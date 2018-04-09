@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Sans Regular 8
+font pango:Sans Regular 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -166,7 +166,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command /home/l31rb4g/scripts/i3status.py
+        #status_command i3status
 }
 
 
@@ -181,7 +182,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # i3 lock
-bindsym $mod+F12 exec --no-startup-id i3lock -c 222222
+bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 
 # workspaces
 workspace 10 output VGA-1
