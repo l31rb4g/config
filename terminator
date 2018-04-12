@@ -23,6 +23,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -35,6 +36,8 @@
     cursor_color = "#aaaaaa"
     font = Inconsolata 10
     foreground_color = "#ebdbb2"
+    icon_bell = False
     scrollback_lines = 3000
     scrollbar_position = hidden
+    show_titlebar = False
     use_system_font = False

@@ -14,10 +14,10 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Sans 10
+font pango:Sans 8
 
 # Border style
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border normal
 hide_edge_borders smart
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -35,8 +35,8 @@ hide_edge_borders smart
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -172,8 +172,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command /home/l31rb4g/scripts/i3status.py
-        #status_command i3status
+    font pango:Sans 10
+    status_command /home/l31rb4g/scripts/i3status.py
 }
 
 
