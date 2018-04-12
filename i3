@@ -18,6 +18,7 @@ font pango:Sans 10
 
 # Border style
 for_window [class="^.*"] border pixel 1
+hide_edge_borders smart
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
