@@ -31,7 +31,7 @@ set nu
 set backspace=indent,eol,start
 set nofoldenable
 set foldmethod=indent
-set clipboard=unnamed,unnamedplus
+set clipboard=unnamed
 set colorcolumn=80
 
 
