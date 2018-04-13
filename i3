@@ -191,5 +191,5 @@ bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 
 # workspaces
-workspace 10 output VGA-1
+workspace 10 output DVI-I-2
 

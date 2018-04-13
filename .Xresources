@@ -37,7 +37,7 @@
 
 
 URxvt.scrollBar: false
-URxvt.saveLines: 0
+URxvt.saveLines: 10000
 URxvt.urgentOnBell: true
 URxvt.font: xft:Inconsolata:size=11
 URxvt.scrollTtyKeypress: true
