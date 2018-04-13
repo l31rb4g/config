@@ -43,7 +43,7 @@ URxvt.urgentOnBell: false
 URxvt.font: xft:Source Code Pro:size=10
 URxvt.scrollTtyKeypress: true
 URxvt.copyCommand: xclip -i -selection clipboard
-URxvt.letterSpace: 0
+URxvt.letterSpace: -1
 URxvt.externalBorder: 0
 
 *.keysym.Control-Up:    \033[1;5A
