@@ -20,5 +20,6 @@ xorg-xset
 make
 make
 net-tools
-
 bash-completion
+i3lock
+python-virtualenvwrapper
