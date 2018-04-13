@@ -176,7 +176,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    font xft:Source Code Pro 10
+    font xft:Source Code Pro 11
     status_command /home/l31rb4g/scripts/i3status.py
 }
 
