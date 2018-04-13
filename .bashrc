@@ -6,8 +6,12 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-#PS1='[\u@\h \W]\$ '
-PS1='[\e[0,32m\u\e[0m@\e[0,34m\h\e[0m \e[0,33m\w\e[0m]\$ '
+
+if [ $TERM == 'linux' ]; then
+    PS1='[\u@\h \W]\$ '
+else
+    PS1='[\e[0,32m\u\e[0m@\e[0,34m\h\e[0m \e[0,33m\w\e[0m]\$ '
+fi
 
 
 # virtualenvwrapper
