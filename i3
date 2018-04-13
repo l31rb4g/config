@@ -17,7 +17,9 @@ set $mod Mod4
 font pango:Sans 8
 
 # Border style
-for_window [class="^.*"] border normal
+for_window [class="^.*"] border 1
+for_window [class="Firefox"] border none
+
 hide_edge_borders smart
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
