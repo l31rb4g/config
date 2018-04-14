@@ -23,5 +23,5 @@ net-tools
 bash-completion
 i3lock
 python-virtualenvwrapper
-xorg-xwininfo
 xorg-xprop
+ctags
