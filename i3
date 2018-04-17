@@ -192,7 +192,8 @@ bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
 
-# i3 lock
+
+bindsym Print exec maim -s | xclip -i -selection clipboard -t image/png
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 
 # workspaces
