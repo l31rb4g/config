@@ -177,7 +177,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     tray_output DVI-I-2
-    font xft:Source Code Pro 11
+    font xft:Source Code Pro 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
 
@@ -197,5 +197,5 @@ bindsym Print exec maim -s | xclip -i -selection clipboard -t image/png
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 
 # workspaces
-workspace 10 output DVI-I-3
-#workspace 10 output VGA-1
+#workspace 10 output DVI-I-3
+workspace 10 output VGA-1
