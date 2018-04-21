@@ -197,5 +197,5 @@ bindsym Print exec maim -s | xclip -i -selection clipboard -t image/png
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 
 # workspaces
-#workspace 10 output DVI-I-3
-workspace 10 output VGA-1
+workspace 10 output DVI-I-3
+#workspace 10 output VGA-1
