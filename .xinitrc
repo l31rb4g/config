@@ -1,7 +1,7 @@
 setxkbmap -layout br -variant abnt2
 xset r rate 250
 xset b off
-rxdb -load ~/.Xresources
-xrandr --output VGA1 --pos 1920x-500
+xrdb -load ~/.Xresources
+xrandr --output VGA-1 --pos 1920x-500
 exec i3
 
