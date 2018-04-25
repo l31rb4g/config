@@ -36,18 +36,22 @@
 *.color15:      #fefbec
 
 
+URxvt.iso14755 : false
 URxvt.scrollBar: false
 URxvt*scrollBar_right: false
 URxvt.saveLines: 10000
 URxvt.urgentOnBell: false
-!URxvt.font: xft:Inconsolata:size=11
 URxvt.font: xft:Source Code Pro:size=10
 URxvt.scrollTtyKeypress: true
-URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.letterSpace: -1
 URxvt.externalBorder: 0
+URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.perl-ext-common:        default,xkr-clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Insert: eval:paste_clipboard
 
 *.keysym.Control-Up:    \033[1;5A
 *.keysym.Control-Down:  \033[1;5B
