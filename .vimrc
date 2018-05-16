@@ -58,6 +58,7 @@ map <f12> @q
 map <c-up> <c-y>
 map <c-down> <c-e>
 nmap D "_dd
+xnoremap p pgvy
 nmap \| 20k
 nmap \ 20j
 
@@ -66,3 +67,5 @@ nmap \ 20j
 vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
 
+
+xnoremap c "_d
