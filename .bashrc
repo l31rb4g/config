@@ -6,7 +6,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#alias ls='ls --color=auto'
+alias ls='ls -G'
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -20,6 +20,12 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/bin/virtualenvwrapper.sh
 
+
 # BASH COMPLETION
 [[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
     source /usr/local/share/bash-completion/bash_completion.sh
+
+
+# LSCOLORS
+export LSCOLORS='exfxcxdxbxegedabagacad'
+

@@ -42,7 +42,7 @@ URxvt*scrollBar_right: false
 URxvt.saveLines: 10000
 URxvt.urgentOnBell: false
 ! URxvt.font: xft:Source Code Pro:size=10
-URxvt.font: xft:Inconsolata:size=12
+URxvt.font: xft:Inconsolata:size=11
 URxvt.scrollTtyKeypress: true
 URxvt.letterSpace: -1
 URxvt.externalBorder: 0

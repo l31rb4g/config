@@ -22,6 +22,8 @@ for_window [class="^.*"] border 1
 for_window [class="Firefox"] border none
 for_window [class="Chromium"] border none
 
+for_window [window_role="(?i)about"] floating enable
+
 hide_edge_borders smart
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -176,8 +178,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    tray_output DVI-I-2
-    #tray_output HDMI-1
+    #tray_output DVI-I-2
+    tray_output HDMI-1
     font xft:Source Code Pro 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
@@ -206,5 +208,5 @@ bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Tab exec --no-startup-id floyd
 
 # WORKSPACES
-workspace 10 output DVI-I-3
-#workspace 10 output VGA-1
+#workspace 10 output DVI-I-3
+workspace 10 output VGA-1
