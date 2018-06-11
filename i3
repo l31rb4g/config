@@ -208,5 +208,5 @@ bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Tab exec --no-startup-id floyd
 
 # WORKSPACES
-workspace 10 output DVI-I-3
+#workspace 10 output DVI-I-3
 workspace 10 output VGA-1
