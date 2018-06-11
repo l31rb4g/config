@@ -178,7 +178,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    #tray_output DVI-I-2
+    tray_output DVI-I-2
     tray_output HDMI-1
     font xft:Source Code Pro 10
     status_command /home/l31rb4g/scripts/i3status.py
@@ -200,13 +200,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id mixer vol -5
 bindsym $mod+F2 exec --no-startup-id mixer vol -5:-5
 bindsym XF86AudioRaiseVolume exec --no-startup-id mixer vol +5
 bindsym $mod+F3 exec --no-startup-id mixer vol +5:+5
-bindsym XF86AudioMute exec --no-startup-id mixer vol 0
-bindsym $mod+F4 exec --no-startup-id mixer vol 0
+bindsym XF86AudioMute exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
+bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 
 bindsym Print exec maim -s | xclip -i -selection clipboard -t image/png
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Tab exec --no-startup-id floyd
 
 # WORKSPACES
-#workspace 10 output DVI-I-3
+workspace 10 output DVI-I-3
 workspace 10 output VGA-1
