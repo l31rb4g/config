@@ -12,14 +12,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-syntastic/syntastic'
 call plug#end()
 
-
 let mapleader = ','
 let g:airline_theme = 'jellybeans'
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
-
+"set encoding=UTF-8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
@@ -69,3 +68,4 @@ vnoremap K :m '<-2<cr>gv=gv
 
 
 xnoremap a "_di
+

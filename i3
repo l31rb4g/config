@@ -203,7 +203,7 @@ bindsym $mod+F3 exec --no-startup-id mixer vol +5:+5
 bindsym XF86AudioMute exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 
-bindsym Print exec maim -s | xclip -i -selection clipboard -t image/png
+bindsym --release Print exec maim -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Tab exec --no-startup-id floyd
 

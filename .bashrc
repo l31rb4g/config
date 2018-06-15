@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+HOME='/home/l31rb4g'
 
 
 # If not running interactively, don't do anything
@@ -18,7 +19,7 @@ fi
 
 # VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 
 # BASH COMPLETION
@@ -27,5 +28,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 
 
 # LSCOLORS
-export LSCOLORS='exfxcxdxbxegedabagacad'
+#export LSCOLORS='exfxcxdxbxegedabagacad'
 
