@@ -41,7 +41,6 @@
 *.scrollBar_right: false
 *.saveLines: 10000
 *.urgentOnBell: false
-*.font: xft:Inconsolata:size=11
 *.scrollTtyKeypress: true
 *.letterSpace: -1
 *.externalBorder: 0
@@ -58,4 +57,4 @@
 *.keysym.Control-Left:  command:\033[1;5D
 *.keysym.Control-Right: command:\033[1;5C
 
-
+*.font: xft:Inconsolata:size=10

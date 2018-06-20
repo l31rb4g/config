@@ -41,7 +41,8 @@ hide_edge_borders smart
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 #bindsym $mod+Return exec terminator
 
 # kill focused window

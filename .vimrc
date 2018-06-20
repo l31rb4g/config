@@ -18,7 +18,8 @@ let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
-"set encoding=UTF-8
+set encoding=UTF-8
+set fileencoding=utf-8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
@@ -32,6 +33,7 @@ set nofoldenable
 set foldmethod=indent
 set clipboard=unnamedplus
 set colorcolumn=80
+set t_Co=256
 
 
 syntax on
