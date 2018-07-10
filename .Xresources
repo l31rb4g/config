@@ -37,27 +37,25 @@
 *.color15:      #fefbec
 
 
-URxvt.iso14755 : false
-URxvt.scrollBar: false
-URxvt*scrollBar_right: false
-URxvt.saveLines: 10000
-URxvt.urgentOnBell: false
-!URxvt.font: xft:Source Code Pro:size=10
-URxvt.font: xft:Dejavu Sans Mono:size=11
-URxvt.scrollTtyKeypress: true
-URxvt.letterSpace: -1
-URxvt.externalBorder: 0
-URxvt.copyCommand: xclip -i -selection clipboard
-URxvt.keysym.Shift-Up: command:\033]720;1\007
-URxvt.keysym.Shift-Down: command:\033]721;1\007
-URxvt.perl-ext-common:        default,xkr-clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Insert: eval:paste_clipboard
+*.iso14755 : false
+*.scrollBar: false
+*.scrollBar_right: false
+*.saveLines: 10000
+*.urgentOnBell: false
+*.scrollTtyKeypress: true
+*.letterSpace: -1
+*.externalBorder: 0
+*.copyCommand: xclip -i -selection clipboard
+*.keysym.Shift-Up: command:\033]720;1\007
+*.keysym.Shift-Down: command:\033]721;1\007
+*.perl-ext-common:        default,xkr-clipboard
+*.keysym.Shift-Control-C: eval:selection_to_clipboard
+*.keysym.Shift-Control-V: eval:paste_clipboard
+*.keysym.Shift-Insert: eval:paste_clipboard
 
-*.keysym.Control-Up:    \033[1;5A
-*.keysym.Control-Down:  \033[1;5B
-*.keysym.Control-Left:  \033[1;5D
-*.keysym.Control-Right: \033[1;5C
+*.keysym.Control-Up:    command:\033[1;5A
+*.keysym.Control-Down:  command:\033[1;5B
+*.keysym.Control-Left:  command:\033[1;5D
+*.keysym.Control-Right: command:\033[1;5C
 
-
+*.font: xft:Inconsolata:size=10

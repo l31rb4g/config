@@ -2,11 +2,17 @@
 # ~/.bashrc
 #
 
+HOME='/home/l31rb4g'
+
+CHARSET='UTF-8'
+export LANG=en_US.$CHARSET;
+export LC_ALL=en_US.$CHARSET;
+export MM_CHARSET=$CHARSET;
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='ls -G'
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -16,9 +22,18 @@ else
 fi
 
 
-# virtualenvwrapper
+# VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+# BASH COMPLETION
+[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
+    source /usr/local/share/bash-completion/bash_completion.sh
+
+
+# LSCOLORS
+#export LSCOLORS='exfxcxdxbxegedabagacad'
 
 
 

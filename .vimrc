@@ -13,14 +13,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'michaeljsmith/vim-indent-object'
 call plug#end()
 
-
 let mapleader = ','
 let g:airline_theme = 'jellybeans'
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
-
+set encoding=UTF-8
+set fileencoding=utf-8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
@@ -35,6 +35,7 @@ set nofoldenable
 "set foldnestmax=1
 set clipboard=unnamedplus
 set colorcolumn=80
+set t_Co=256
 
 
 syntax on
@@ -72,3 +73,4 @@ vnoremap K :m '<-2<cr>gv=gv
 
 
 xnoremap a "_di
+
