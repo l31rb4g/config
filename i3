@@ -15,7 +15,8 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:Sans 8
-font xft:Source Code Pro 9
+#font xft:Source Code Pro 9
+font xft:DejaVuSansMono 8
 
 # Border style
 for_window [class="^.*"] border 1
@@ -160,10 +161,10 @@ mode "resize" {
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -178,7 +179,7 @@ bindsym $mod+r mode "resize"
 bar {
     #tray_output DVI-I-2
     tray_output HDMI-1
-    font xft:Source Code Pro 10
+    font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
 

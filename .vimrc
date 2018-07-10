@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Yggdroot/indentLine'
 "    Plug 'Valloric/YouCompleteMe'
     Plug 'vim-syntastic/syntastic'
+    Plug 'michaeljsmith/vim-indent-object'
 call plug#end()
 
 
@@ -30,7 +31,8 @@ set number relativenumber
 set nu
 set backspace=indent,eol,start
 set nofoldenable
-set foldmethod=indent
+"set foldmethod=indent
+"set foldnestmax=1
 set clipboard=unnamedplus
 set colorcolumn=80
 
@@ -48,6 +50,7 @@ augroup END
 " Mapping
 map ! :nohl<cr>
 map # *``
+map <f2> Viizf
 map <f3> :NERDTreeToggle<cr>
 map <f4> :!~/scripts/tags.py<cr><cr>
 map <f5> :w<cr>
