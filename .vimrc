@@ -51,6 +51,7 @@ augroup END
 " Mapping
 map ! :nohl<cr>
 map # *``
+map <f1> "_
 map <f2> Viizf
 map <f3> :NERDTreeToggle<cr>
 map <f4> :!~/scripts/tags.py<cr><cr>
