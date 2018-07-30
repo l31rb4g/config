@@ -1,3 +1,7 @@
+! font
+!*.font: xft:Inconsolata:size=10
+*.font: xft:DejaVuSansMono:size=10
+
 ! special
 *.foreground:   #cccccc
 *.background:   #20201d
@@ -45,17 +49,24 @@
 *.scrollTtyKeypress: true
 *.letterSpace: -1
 *.externalBorder: 0
-*.copyCommand: xclip -i -selection clipboard
-*.keysym.Shift-Up: command:\033]720;1\007
-*.keysym.Shift-Down: command:\033]721;1\007
-*.perl-ext-common:        default,xkr-clipboard
-*.keysym.Shift-Control-C: eval:selection_to_clipboard
-*.keysym.Shift-Control-V: eval:paste_clipboard
-*.keysym.Shift-Insert: eval:paste_clipboard
 
-*.keysym.Control-Up:    command:\033[1;5A
-*.keysym.Control-Down:  command:\033[1;5B
-*.keysym.Control-Left:  command:\033[1;5D
-*.keysym.Control-Right: command:\033[1;5C
+!*.copyCommand: xclip -i -selection clipboard
+!*.perl-ext-common:        default,xkr-clipboard
+!*.keysym.Shift-Up: command:\033]720;1\007
+!*.keysym.Shift-Down: command:\033]721;1\007
+!*.keysym.Shift-Control-C: eval:selection_to_clipboard
+!*.keysym.Shift-Control-V: eval:paste_clipboard
+!*.keysym.Shift-Insert: eval:paste_clipboard
+!*.keysym.Control-Up:    command:\033[1;5A
+!*.keysym.Control-Down:  command:\033[1;5B
+!*.keysym.Control-Left:  command:\033[1;5D
+!*.keysym.Control-Right: command:\033[1;5C
+!*.clipboard.autocopy: false
 
-*.font: xft:Inconsolata:size=10
+XTerm*vt100*translations:   #override                       \n \
+    Shift Ctrl <KeyPress>C: copy-selection(CLIPBOARD)       \n \
+    Shift Ctrl <KeyPress>V: insert-selection(CLIPBOARD)     \n \
+    Shift <KeyPress>Insert: insert-selection(CLIPBOARD)     \n \
+    Shift <KeyPress>Up: scroll-back(1)                       \n \
+    Shift <KeyPress>Down: scroll-forw(1)                     \n \
+

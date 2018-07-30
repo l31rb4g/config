@@ -73,5 +73,6 @@ vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-2<cr>gv=gv
 
 
-xnoremap a "_di
+"xnoremap a "_di
+xnoremap s "_s
 

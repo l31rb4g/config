@@ -12,7 +12,7 @@ export MM_CHARSET=$CHARSET;
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls -G'
+alias ls='ls --color'
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -24,7 +24,7 @@ fi
 
 # VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 
 # BASH COMPLETION
@@ -46,3 +46,10 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
+
+# PYENV
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#if command -v pyenv 1>/dev/null 2>&1; then
+  #eval "$(pyenv init -)"
+#fi
