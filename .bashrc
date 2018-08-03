@@ -12,7 +12,7 @@ export MM_CHARSET=$CHARSET;
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls -G'
+alias ls='ls --color'
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -24,11 +24,11 @@ fi
 
 # VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 
 # BASH COMPLETION
-[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion.sh ]] && \
     source /usr/local/share/bash-completion/bash_completion.sh
 
 

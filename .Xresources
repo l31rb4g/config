@@ -1,7 +1,7 @@
 ! special
 *.foreground:   #cccccc
 *.background:   #20201d
-*.cursorColor:  #a6a28c
+*.cursorColor:  #00ffff
 
 ! black
 *.color0:       #20201d
@@ -57,4 +57,4 @@
 *.keysym.Control-Left:  command:\033[1;5D
 *.keysym.Control-Right: command:\033[1;5C
 
-*.font: xft:Inconsolata:size=10
+*.font: xft:DejaVuSansMono:size=10
