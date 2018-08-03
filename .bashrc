@@ -28,7 +28,7 @@ source /usr/bin/virtualenvwrapper.sh
 
 
 # BASH COMPLETION
-[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion.sh ]] && \
     source /usr/local/share/bash-completion/bash_completion.sh
 
 
