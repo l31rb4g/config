@@ -64,11 +64,20 @@ map <f3> :NERDTreeToggle<cr>
 " create tags
 map <f4> :!~/scripts/tags.py<cr><cr>
 
+" save file
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
-map <f9> <c-w><C-]><c-w>L
-nnoremap <f10> *``viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
-map <f12> "_
+
+" go to definition
+"map <f9> <c-w><C-]><c-w>L
+map <f9> *``g<C-]>
+
+" find in project
+nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
+
+" scrolling
+nmap \| 20k
+nmap \ 20j
 map <c-up> <c-y>
 map <c-down> <c-e>
 
@@ -81,9 +90,7 @@ nnoremap x "_x
 
 xnoremap p pgvy
 
-" cursor jumps
-nmap \| 20k
-nmap \ 20j
+
 
 
 " Move visual block
