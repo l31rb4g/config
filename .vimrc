@@ -49,7 +49,7 @@ augroup numbertoggle
 augroup END
 
 
-" Mapping
+" search highlight
 map ! :nohl<cr>
 map # *``
 
@@ -58,17 +58,21 @@ map <f1> viws
 " folding
 map <f2> Viizf
 
-
+" nerdtree
 map <f3> :NERDTreeToggle<cr>
+
+" create tags
 map <f4> :!~/scripts/tags.py<cr><cr>
+
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
 map <f9> <c-w><C-]><c-w>L
-nnoremap <f10> viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
+nnoremap <f10> *``viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
 map <f12> "_
 map <c-up> <c-y>
 map <c-down> <c-e>
 
+" avoid cut
 nnoremap C "_C
 nnoremap d "_d
 nnoremap D "_dd
@@ -76,15 +80,13 @@ nnoremap s "_s
 nnoremap x "_x
 
 xnoremap p pgvy
+
+" cursor jumps
 nmap \| 20k
 nmap \ 20j
 
 
 " Move visual block
-vnoremap J :m '>+1<cr>gv=gv
-vnoremap K :m '<-2<cr>gv=gv
-
-
-"xnoremap a "_di
-xnoremap s "_s
+"vnoremap J :m '>+1<cr>gv=gv
+"vnoremap K :m '<-2<cr>gv=gv
 
