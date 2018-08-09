@@ -206,7 +206,7 @@ bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
 #bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 
 bindsym --release Print exec maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
-bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
+bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 bindsym $mod+Tab exec --no-startup-id floyd
 
 # WORKSPACES

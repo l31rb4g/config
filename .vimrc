@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 "    Plug 'Valloric/YouCompleteMe'
     Plug 'vim-syntastic/syntastic'
     Plug 'michaeljsmith/vim-indent-object'
+    Plug 'mattn/emmet-vim'
 call plug#end()
 
 let mapleader = ','
@@ -51,18 +52,29 @@ augroup END
 " Mapping
 map ! :nohl<cr>
 map # *``
-map <f1> "_
+
+map <f1> viws
+
+" folding
 map <f2> Viizf
+
+
 map <f3> :NERDTreeToggle<cr>
 map <f4> :!~/scripts/tags.py<cr><cr>
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
 map <f9> <c-w><C-]><c-w>L
 nnoremap <f10> viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
-map <f12> @q
+map <f12> "_
 map <c-up> <c-y>
 map <c-down> <c-e>
-nmap D "_dd
+
+nnoremap C "_C
+nnoremap d "_d
+nnoremap D "_dd
+nnoremap s "_s
+nnoremap x "_x
+
 xnoremap p pgvy
 nmap \| 20k
 nmap \ 20j
