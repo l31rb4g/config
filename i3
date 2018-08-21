@@ -196,6 +196,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym $mod+F5 exec --no-startup-id pactl set-sink-volume 0 100%
 
 # VOLUME (FREEBSD)
 #bindsym XF86AudioLowerVolume exec --no-startup-id mixer vol -5
@@ -205,10 +206,11 @@ bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
 #bindsym XF86AudioMute exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 #bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 
+bindsym $mod+F1 exec bash /home/l31rb4g/scripts/run_config.sh
 bindsym --release Print exec maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
-bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
+bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 bindsym $mod+Tab exec --no-startup-id floyd
 
 # WORKSPACES
-#workspace 10 output DVI-I-3
-workspace 10 output VGA-1
+workspace 10 output DVI-I-3
+#workspace 10 output VGA-1
