@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 "    Plug 'Valloric/YouCompleteMe'
     Plug 'vim-syntastic/syntastic'
     Plug 'michaeljsmith/vim-indent-object'
+    Plug 'mattn/emmet-vim'
 call plug#end()
 
 let mapleader = ','
@@ -48,31 +49,51 @@ augroup numbertoggle
 augroup END
 
 
-" Mapping
+" search highlight
 map ! :nohl<cr>
 map # *``
-map <f1> "_
+
+map <f1> viws
+
+" folding
 map <f2> Viizf
+
+" nerdtree
 map <f3> :NERDTreeToggle<cr>
+
+" create tags
 map <f4> :!~/scripts/tags.py<cr><cr>
+
+" save file
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
-map <f9> <c-w><C-]><c-w>L
-nnoremap <f10> viw"wy:!~/scripts/find_in_project.sh <c-r>w<cr><cr>
-map <f12> @q
-map <c-up> <c-y>
-map <c-down> <c-e>
-nmap D "_dd
-xnoremap p pgvy
+
+" go to definition
+"map <f9> <c-w><C-]><c-w>L
+map <f9> *``g<C-]>
+
+" find in project
+nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
+
+" scrolling
 nmap \| 20k
 nmap \ 20j
+map <c-up> <c-y>
+map <c-down> <c-e>
+
+" avoid cut
+nnoremap C "_C
+nnoremap d "_d
+nnoremap D "_dd
+nnoremap s "_s
+nnoremap x "_x
+
+xnoremap p pgvy
+
+
 
 
 " Move visual block
-vnoremap J :m '>+1<cr>gv=gv
-vnoremap K :m '<-2<cr>gv=gv
-
-
-"xnoremap a "_di
-xnoremap s "_s
+"vnoremap J :m '>+1<cr>gv=gv
+"vnoremap K :m '<-2<cr>gv=gv
 
