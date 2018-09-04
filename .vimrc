@@ -53,7 +53,7 @@ augroup END
 map ! :nohl<cr>
 map # *``
 
-map <f1> viws
+map <f1> viw"_s
 
 " folding
 map <f2> Viizf
@@ -83,7 +83,7 @@ map <c-down> <c-e>
 
 " avoid cut
 nnoremap C "_C
-nnoremap d "_d
+"nnoremap d "_d
 nnoremap D "_dd
 nnoremap s "_s
 nnoremap x "_x

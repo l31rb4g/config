@@ -181,14 +181,30 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     tray_output DVI-I-2
-    tray_output HDMI-1
+    output DVI-I-2
     font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py
+}
+
+bar {
+    tray_output none
+    output DVI-I-3
+    font xft:DejaVuSansMono 10
+    status_command /home/l31rb4g/scripts/i3status.py --vertical
 }
 
 
 focus_follows_mouse no
 
+
+##############################
+# Keyboard shortcuts
+##############################
+
+# F1
+bindsym $mod+F1 exec bash /home/l31rb4g/scripts/run_config.sh
+
+# F2, F3, F4, SF4, F5
 # VOLUME (LINUX PULSEAUDIO)
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -196,8 +212,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym $mod+F3 exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym $mod+F4 exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym $mod+F5 exec --no-startup-id pactl set-sink-volume 0 100%
-
+bindsym $mod+Shift+F4 exec --no-startup-id pactl set-sink-volume 0 100%
 # VOLUME (FREEBSD)
 #bindsym XF86AudioLowerVolume exec --no-startup-id mixer vol -5
 #bindsym $mod+F2 exec --no-startup-id mixer vol -5:-5
@@ -206,11 +221,25 @@ bindsym $mod+F5 exec --no-startup-id pactl set-sink-volume 0 100%
 #bindsym XF86AudioMute exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 #bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 
-bindsym $mod+F1 exec bash /home/l31rb4g/scripts/run_config.sh
-bindsym --release Print exec maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
+# F5
+bindsym $mod+F5 exec --no-startup-id killall -19 firefox
+
+# F6
+bindsym $mod+F6 exec --no-startup-id killall -18 firefox
+
+# F12
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
+
+# Screenshot
+bindsym --release Print exec --no-startup-id maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
+
+# Tab
 bindsym $mod+Tab exec --no-startup-id floyd
 
+
+
+##############################
 # WORKSPACES
+##############################
 workspace 10 output DVI-I-3
 #workspace 10 output VGA-1
