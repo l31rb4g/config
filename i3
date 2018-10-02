@@ -204,7 +204,7 @@ focus_follows_mouse no
 # F1
 bindsym $mod+F1 exec bash /home/l31rb4g/scripts/run_config.sh
 
-# F2, F3, F4, SF4, F5
+# F2, F3, F4, SF4
 # VOLUME (LINUX PULSEAUDIO)
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym $mod+F2 exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -227,11 +227,18 @@ bindsym $mod+F5 exec --no-startup-id killall -19 firefox
 # F6
 bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 
+# F9
+bindsym $mod+F9 exec --no-startup-id pcmanfm
+
+# F10
+bindsym $mod+F10 exec --no-startup-id pavucontrol
+
 # F12
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 
 # Screenshot
 bindsym --release Print exec --no-startup-id maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
+bindsym --release Control+Print exec --no-startup-id ~/scripts/save_ss.sh
 
 # Tab
 bindsym $mod+Tab exec --no-startup-id floyd
