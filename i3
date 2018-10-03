@@ -227,6 +227,9 @@ bindsym $mod+F5 exec --no-startup-id killall -19 firefox
 # F6
 bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 
+# F8
+bindsym $mod+F8 exec --no-startup-id timebox
+
 # F9
 bindsym $mod+F9 exec --no-startup-id pcmanfm
 
