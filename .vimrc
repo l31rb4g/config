@@ -38,6 +38,7 @@ set nofoldenable
 set clipboard=unnamedplus
 set colorcolumn=80
 set t_Co=256
+set conceallevel=0
 
 
 syntax on
