@@ -236,6 +236,9 @@ bindsym $mod+F9 exec --no-startup-id pcmanfm
 # F10
 bindsym $mod+F10 exec --no-startup-id pavucontrol
 
+# F11
+bindsym $mod+F11 exec --no-startup-id chromium -incognito
+
 # F12
 bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 

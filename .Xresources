@@ -1,6 +1,6 @@
 ! font
-!*.font: xft:Inconsolata:size=10
-*.font: xft:DejaVuSansMono:size=10
+*.font: xft:Inconsolata:size=12
+!*.font: xft:DejaVuSansMono:size=14
 
 ! special
 *.foreground:   #cccccc

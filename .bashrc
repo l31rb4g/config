@@ -5,9 +5,11 @@
 HOME='/home/l31rb4g'
 
 CHARSET='UTF-8'
-export LANG=en_US.$CHARSET;
-export LC_ALL=en_US.$CHARSET;
-export MM_CHARSET=$CHARSET;
+export LANG=en_US.$CHARSET
+export LC_ALL=en_US.$CHARSET
+export MM_CHARSET=$CHARSET
+export HISTCONTROL=ignorespace
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

@@ -13,12 +13,24 @@ call plug#begin('~/.vim/plugged')
     Plug 'michaeljsmith/vim-indent-object'
     Plug 'mattn/emmet-vim'
     Plug 'jdonaldson/vaxe'
+    Plug 'lambdalisue/vim-django-support'
 call plug#end()
+
+syntax on
+color dracula
+
 
 let mapleader = ','
 let g:airline_theme = 'jellybeans'
+
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
+let NERDTreeMapOpenInTab='<space>'
+if argc() == 0
+    autocmd VimEnter * NERDTree
+endif
+
+
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
 set encoding=UTF-8
@@ -41,8 +53,7 @@ set t_Co=256
 set conceallevel=0
 
 
-syntax on
-color dracula
+
 
 "augroup numbertoggle
     "autocmd!
@@ -87,6 +98,12 @@ nmap \| 20k
 nmap \ 20j
 map <c-up> <c-y>
 map <c-down> <c-e>
+
+
+" tabs
+map <c-left> gT
+map <c-right> gt
+
 
 " avoid cut
 nnoremap C "_C
