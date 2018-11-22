@@ -19,20 +19,6 @@ call plug#end()
 syntax on
 color dracula
 
-
-let mapleader = ','
-let g:airline_theme = 'jellybeans'
-
-let NERDTreeShowHidden = 1
-let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
-let NERDTreeMapOpenInTab='<space>'
-if argc() == 0
-    autocmd VimEnter * NERDTree
-endif
-
-
-let g:syntastic_quiet_messages = {"!level": "errors"}
-
 set encoding=UTF-8
 set fileencoding=utf-8
 set expandtab
@@ -53,6 +39,19 @@ set t_Co=256
 set conceallevel=0
 
 
+let mapleader = ','
+let g:airline_theme = 'jellybeans'
+
+let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '^tags$']
+let NERDTreeMapOpenInTab='<space>'
+if argc() == 0
+    autocmd VimEnter * NERDTree
+    au VimEnter * if exists(':NERDTree') | wincmd l | endif
+    au VimEnter * if exists(':NERDTree') | wincmd c | endif
+endif
+
+let g:syntastic_quiet_messages = {"!level": "errors"}
 
 
 "augroup numbertoggle
@@ -93,6 +92,7 @@ nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
 map <f11> n<down><f2>
 map <f12> @q
 
+
 " scrolling
 nmap \| 20k
 nmap \ 20j
@@ -101,8 +101,13 @@ map <c-down> <c-e>
 
 
 " tabs
-map <c-left> gT
-map <c-right> gt
+map <c-s-left> gT
+map <c-s-right> gt
+
+
+" move line
+noremap <c-s-up> m-2
+noremap <c-s-down> m+1
 
 
 " avoid cut
@@ -117,11 +122,7 @@ vnoremap s "_s
 xnoremap p pgvy
 
 
-
-
 " Move visual block
 "vnoremap J :m '>+1<cr>gv=gv
 "vnoremap K :m '<-2<cr>gv=gv
-
-
 

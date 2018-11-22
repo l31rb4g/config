@@ -200,9 +200,12 @@ focus_follows_mouse no
 ##############################
 # Keyboard shortcuts
 ##############################
-
 # F1
-bindsym $mod+F1 exec bash /home/l31rb4g/scripts/run_config.sh
+bindsym $mod+F1 exec firefox
+
+
+# SF1
+bindsym $mod+Shift+F1 exec --no-startup-id bash /home/l31rb4g/scripts/run_config.sh
 
 # F2, F3, F4, SF4
 # VOLUME (LINUX PULSEAUDIO)
