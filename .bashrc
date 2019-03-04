@@ -10,11 +10,12 @@ export LC_ALL=en_US.$CHARSET
 export MM_CHARSET=$CHARSET
 export HISTCONTROL=ignorespace
 
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color'
+alias wo='workon'
+alias ag='ag --ignore tags'
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -55,3 +56,9 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 #if command -v pyenv 1>/dev/null 2>&1; then
   #eval "$(pyenv init -)"
 #fi
+
+# Dolphin
+export XDG_CURRENT_DESKTOP=kde
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+

@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'jdonaldson/vaxe'
     Plug 'lambdalisue/vim-django-support'
+    Plug 'posva/vim-vue'
 call plug#end()
 
 syntax on
@@ -54,6 +55,8 @@ endif
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
 
+autocmd BufNewFile,BufRead *.sp    set syntax=cpp
+
 "augroup numbertoggle
     "autocmd!
     "autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -71,6 +74,7 @@ imap <f1> <esc>viw"_s
 " folding
 map <f2> Viizf
 
+
 " nerdtree
 map <f3> :NERDTreeToggle<cr>
 
@@ -81,9 +85,11 @@ map <f4> :!~/scripts/tags.py<cr><cr>
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
 
+map <f8> let @q="/^[^ }/\t].*{$<cr>kdk2kdK4"
+
 " go to definition
 "map <f9> <c-w><C-]><c-w>L
-map <f9> *``g<C-]>
+map <f9> *``<c-w>]<c-w>T<cr>
 
 " find in project
 nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
@@ -106,8 +112,8 @@ map <c-s-right> gt
 
 
 " move line
-noremap <c-s-up> m-2
-noremap <c-s-down> m+1
+"nnoremap <c-,> :m-2<cr>
+"nnoremap <c-.> :m+1<cr>
 
 
 " avoid cut

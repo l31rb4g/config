@@ -203,9 +203,8 @@ focus_follows_mouse no
 # F1
 bindsym $mod+F1 exec firefox
 
-
 # SF1
-bindsym $mod+Shift+F1 exec --no-startup-id bash /home/l31rb4g/scripts/run_config.sh
+bindsym $mod+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/selector.sh
 
 # F2, F3, F4, SF4
 # VOLUME (LINUX PULSEAUDIO)
@@ -227,6 +226,9 @@ bindsym $mod+Shift+F4 exec --no-startup-id pactl set-sink-volume 0 100%
 # F5
 bindsym $mod+F5 exec --no-startup-id killall -19 firefox
 
+# SF5
+bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/run_config.sh
+
 # F6
 bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 
@@ -234,7 +236,7 @@ bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 bindsym $mod+F8 exec --no-startup-id timebox
 
 # F9
-bindsym $mod+F9 exec --no-startup-id pcmanfm
+bindsym $mod+F9 exec --no-startup-id dolphin
 
 # F10
 bindsym $mod+F10 exec --no-startup-id pavucontrol
