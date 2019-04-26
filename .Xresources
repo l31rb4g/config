@@ -1,5 +1,4 @@
 ! font
-!*.font: xft:Inconsolata:size=12
 *.font: xft:DejaVuSansMono:size=11
 
 ! special

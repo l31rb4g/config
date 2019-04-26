@@ -22,6 +22,9 @@ font xft:DejaVuSansMono 8
 for_window [class="^.*"] border 1
 for_window [class="Firefox"] border none
 for_window [class="Chromium"] border none
+for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
+#for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
+#for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
 
 for_window [window_role="(?i)about"] floating enable
 
@@ -236,7 +239,7 @@ bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 bindsym $mod+F8 exec --no-startup-id timebox
 
 # F9
-bindsym $mod+F9 exec --no-startup-id dolphin
+bindsym $mod+F9 exec --no-startup-id pcmanfm
 
 # F10
 bindsym $mod+F10 exec --no-startup-id pavucontrol
@@ -261,3 +264,21 @@ bindsym $mod+Tab exec --no-startup-id floyd
 ##############################
 workspace 10 output DVI-I-3
 #workspace 10 output VGA-1
+
+
+
+
+
+
+
+
+exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.i3/workspace-1.json'"
+exec --no-startup-id xterm
+
+exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.i3/workspace-2.json'"
+exec --no-startup-id firefox
+
+exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.i3/workspace-3.json'"
+exec --no-startup-id rambox
+
+exec --no-startup-id "i3-msg 'workspace 2;'"

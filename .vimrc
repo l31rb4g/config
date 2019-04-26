@@ -55,6 +55,8 @@ endif
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
 
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
 autocmd BufNewFile,BufRead *.sp    set syntax=cpp
 
 "augroup numbertoggle
