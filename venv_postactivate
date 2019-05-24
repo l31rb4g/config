@@ -3,4 +3,6 @@
 
 export CONFIG=config.yml
 
-PS1="\[\e[1;37m\]`basename \"$VIRTUAL_ENV\"`\[\e[0m\] $_OLD_VIRTUAL_PS1"
+#PS1="\[\e[1;37m\]`basename \"$VIRTUAL_ENV\"`\[\e[0m\] $_OLD_VIRTUAL_PS1"
+PS1=$_OLD_VIRTUAL_PS1
+VENV="\e[1m"$(basename "$VIRTUAL_ENV")"\e[m/"

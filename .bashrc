@@ -28,7 +28,7 @@ source /usr/bin/virtualenvwrapper.sh
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
 else
-    PS1='[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\]]$(__git_ps1 "[\e[34m%s\e[m]")\$ '
+    PS1='$(__git_ps1 "[$VENV\e[34m%s\e[m]")[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\W\[\e[m\]]\$ '
 fi
 
 
