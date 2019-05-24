@@ -2,9 +2,10 @@
 # ~/.bashrc
 #
 
-HOME='/home/l31rb4g'
 
+HOME='/home/l31rb4g'
 CHARSET='UTF-8'
+
 export LANG=en_US.$CHARSET
 export LC_ALL=en_US.$CHARSET
 export MM_CHARSET=$CHARSET
@@ -17,27 +18,23 @@ alias ls='ls --color'
 alias wo='workon'
 alias ag='ag --ignore tags'
 
-if [ $TERM == 'linux' ]; then
-    PS1='[\u@\h \W]\$ '
-else
-    #PS1='[\e[32m\u\e[0m@\e[34m\h\e[0m \e[33m\w\e[0m]\$ '
-    PS1='[\[\e[32m\]\u\[\e[0m\]@\[\e[34m\]\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]]\$ '
-fi
-
+. $HOME/.git-prompt.sh
 
 # VIRTUALENVWRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
 
+if [ $TERM == 'linux' ]; then
+    PS1='[\u@\h \W]\$ '
+else
+    PS1='$(__git_ps1 "\e[34m%s\e[m ")[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\]]\$ '
+fi
+
+
 # BASH COMPLETION
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion.sh ]] && \
     source /usr/local/share/bash-completion/bash_completion.sh
-
-
-# LSCOLORS
-#export LSCOLORS='exfxcxdxbxegedabagacad'
-
 
 
 # COLORED MANUALS
@@ -50,15 +47,8 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 
-# PYENV
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#if command -v pyenv 1>/dev/null 2>&1; then
-  #eval "$(pyenv init -)"
-#fi
-
 # Dolphin
 export XDG_CURRENT_DESKTOP=kde
 
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-
+# Added by n-install (see http://git.io/n-install-repo).
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  

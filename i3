@@ -22,7 +22,7 @@ font xft:DejaVuSansMono 8
 for_window [class="^.*"] border 1
 for_window [class="Firefox"] border none
 for_window [class="Chromium"] border none
-for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
+#for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
 #for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
 #for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
 
