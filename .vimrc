@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'jdonaldson/vaxe'
     Plug 'lambdalisue/vim-django-support'
     Plug 'posva/vim-vue'
+    Plug 'Chiel92/vim-autoformat'
 call plug#end()
 
 syntax on
@@ -86,6 +87,8 @@ map <f4> :!~/scripts/tags.py<cr><cr>
 " save file
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
+
+map <f6> :Autoformat<cr>
 
 map <f8> let @q="/^[^ }/\t].*{$<cr>kdk2kdK4"
 
