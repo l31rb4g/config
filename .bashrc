@@ -16,7 +16,7 @@ export HISTCONTROL=ignorespace
 
 alias ls='ls --color'
 alias wo='workon'
-alias ag='ag --ignore tags'
+alias ag='ag --ignore tags --ignore *.sql'
 
 . $HOME/.git-prompt.sh
 
@@ -28,7 +28,8 @@ source /usr/bin/virtualenvwrapper.sh
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
 else
-    PS1='$(__git_ps1 "[$VENV\[\e[34m%s\e[m]\]")[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\W\[\e[m\]]\$ '
+    #PS1='$(__git_ps1 "[$VENV\[\e[34m%s\e[m]\]")[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\W\[\e[m\]]\$ '
+    PS1='$(__git_ps1 "[$VENV/\[\e[34m\]%s\[\e[m]\]")[\[\e[32m\]\u\[\e[m\] \[\e[33m\]\W\[\e[m\]]\$ '
 fi
 
 
@@ -52,3 +53,8 @@ export XDG_CURRENT_DESKTOP=kde
 
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
+
+
+export ANDROID_HOME=/home/l31rb4g/android
+
+export PATH=$PATH:/home/l31rb4g/flutter/bin

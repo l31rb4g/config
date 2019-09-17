@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'dracula/vim', {'as': 'dracula'}
     Plug 'Yggdroot/indentLine'
-"    Plug 'Valloric/YouCompleteMe'
+    Plug 'Valloric/YouCompleteMe'
     Plug 'vim-syntastic/syntastic'
     Plug 'michaeljsmith/vim-indent-object'
     Plug 'mattn/emmet-vim'
@@ -16,6 +16,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'lambdalisue/vim-django-support'
     Plug 'posva/vim-vue'
     Plug 'Chiel92/vim-autoformat'
+    Plug 'dart-lang/dart-vim-plugin'
+    Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 syntax on
@@ -26,21 +28,23 @@ set fileencoding=utf-8
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-set autoindent
-set smartindent
+"set autoindent
+"set smartindent
 set hlsearch
 "set number relativenumber
 set nu
 set backspace=indent,eol,start
 set nofoldenable
-"set foldmethod=indent
-"set foldnestmax=1
+set foldmethod=indent
+set foldnestmax=3
 set clipboard=unnamedplus
 set colorcolumn=80
 set t_Co=256
 set conceallevel=0
+set completeopt-=preview
 
 
+let g:ycm_auto_trigger = 0
 let mapleader = ','
 let g:airline_theme = 'jellybeans'
 
@@ -56,7 +60,13 @@ endif
 let g:syntastic_quiet_messages = {"!level": "errors"}
 
 
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType htmldjango setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType css setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType scss setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType xml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType haxe setlocal colorcolumn=120 foldmethod=indent foldnestmax=3
+autocmd FileType haxe setlocal colorcolumn=120 foldmethod=syntax
 
 autocmd BufNewFile,BufRead *.sp    set syntax=cpp
 
@@ -72,10 +82,10 @@ map ! :nohl<cr>
 map # *``
 
 map <f1> viw"_s
-imap <f1> <esc>viw"_s
+imap <f1> <esc>lviw"_s
 
 " folding
-map <f2> Viizf
+map <f2> Viizc
 
 
 " nerdtree
@@ -88,7 +98,7 @@ map <f4> :!~/scripts/tags.py<cr><cr>
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
 
-map <f6> :Autoformat<cr>
+map <f7> :Autoformat<cr>
 
 map <f8> let @q="/^[^ }/\t].*{$<cr>kdk2kdK4"
 

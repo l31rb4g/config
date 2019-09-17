@@ -20,8 +20,9 @@ font xft:DejaVuSansMono 8
 
 # Border style
 for_window [class="^.*"] border 1
-for_window [class="Firefox"] border none
+for_window [class="firefox"] border none
 for_window [class="Chromium"] border none
+for_window [title="Emulator"] floating enable; floating_maximum_size "607 x 1080"
 #for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
 #for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
 #for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
@@ -239,7 +240,8 @@ bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 bindsym $mod+F8 exec --no-startup-id timebox
 
 # F9
-bindsym $mod+F9 exec --no-startup-id pcmanfm
+#bindsym $mod+F9 exec --no-startup-id pcmanfm
+bindsym $mod+F9 exec --no-startup-id dolphin
 
 # F10
 bindsym $mod+F10 exec --no-startup-id pavucontrol
