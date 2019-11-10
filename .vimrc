@@ -9,12 +9,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'dracula/vim', {'as': 'dracula'}
     Plug 'Yggdroot/indentLine'
     Plug 'Valloric/YouCompleteMe'
-    Plug 'vim-syntastic/syntastic'
+    "Plug 'vim-syntastic/syntastic'
     Plug 'michaeljsmith/vim-indent-object'
     Plug 'mattn/emmet-vim'
     Plug 'jdonaldson/vaxe'
     Plug 'lambdalisue/vim-django-support'
-    Plug 'posva/vim-vue'
+    "Plug 'posva/vim-vue'
     Plug 'Chiel92/vim-autoformat'
     Plug 'dart-lang/dart-vim-plugin'
     Plug 'thosakwe/vim-flutter'
@@ -35,8 +35,8 @@ set hlsearch
 set nu
 set backspace=indent,eol,start
 set nofoldenable
-set foldmethod=indent
-set foldnestmax=3
+"set foldmethod=indent
+"set foldnestmax=1
 set clipboard=unnamedplus
 set colorcolumn=80
 set t_Co=256
@@ -65,8 +65,9 @@ autocmd FileType htmldjango setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType css setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType scss setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType xml setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType haxe setlocal colorcolumn=120 foldmethod=indent foldnestmax=3
-autocmd FileType haxe setlocal colorcolumn=120 foldmethod=syntax
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType haxe setlocal colorcolumn=120
+autocmd FileType haxe setlocal colorcolumn=120
 
 autocmd BufNewFile,BufRead *.sp    set syntax=cpp
 
@@ -85,7 +86,7 @@ map <f1> viw"_s
 imap <f1> <esc>lviw"_s
 
 " folding
-map <f2> Viizc
+map <f2> Viizf
 
 
 " nerdtree

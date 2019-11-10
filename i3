@@ -205,10 +205,13 @@ focus_follows_mouse no
 # Keyboard shortcuts
 ##############################
 # F1
-bindsym $mod+F1 exec firefox
+bindsym $mod+F1 exec --no-startup-id /home/l31rb4g/scripts/i3-utils.sh focus
 
 # SF1
-bindsym $mod+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/selector.sh
+bindsym $mod+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/i3-utils.sh blur
+
+# CSF1
+bindsym $mod+Control+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/selector.sh
 
 # F2, F3, F4, SF4
 # VOLUME (LINUX PULSEAUDIO)
@@ -226,6 +229,10 @@ bindsym $mod+Shift+F4 exec --no-startup-id pactl set-sink-volume 0 100%
 #bindsym $mod+F3 exec --no-startup-id mixer vol +5:+5
 #bindsym XF86AudioMute exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
 #bindsym $mod+F4 exec --no-startup-id /home/l31rb4g/scripts/mixer-toggle-mute.sh
+
+# SF2
+bindsym $mod+Shift+F2 exec firefox
+
 
 # F5
 bindsym $mod+F5 exec --no-startup-id killall -19 firefox
