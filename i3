@@ -21,11 +21,17 @@ font xft:DejaVuSansMono 8
 # Border style
 for_window [class="^.*"] border 1
 for_window [class="firefox"] border none
+for_window [class="Tor Browser"] border none
 for_window [class="Chromium"] border none
 for_window [title="Emulator"] floating enable; floating_maximum_size "607 x 1080"
 #for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
 #for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
 #for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
+
+
+# Colors
+client.focused          #5FFF87 #5FFF87 #000000 #2e9ef4 #5FFF87
+
 
 for_window [window_role="(?i)about"] floating enable
 
@@ -242,6 +248,10 @@ bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/run_config
 
 # F6
 bindsym $mod+F6 exec --no-startup-id killall -18 firefox
+
+# F7
+bindsym $mod+F7 exec --no-startup-id explorer start
+bindsym $mod+Shift+F7 exec --no-startup-id explorer stop
 
 # F8
 bindsym $mod+F8 exec --no-startup-id timebox

@@ -5,7 +5,8 @@
 *.foreground:   #cccccc
 *.background:   #20201d
 !*.cursorColor:  #a6a28c
-*.cursorColor:  #00ffff
+!*.cursorColor:  #00ffff
+*.cursorColor:  #ffff00
 
 ! black
 *.color0:       #20201d
