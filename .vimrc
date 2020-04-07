@@ -107,8 +107,11 @@ map <f8> let @q="/^[^ }/\t].*{$<cr>kdk2kdK4"
 "map <f9> <c-w><C-]><c-w>L
 map <f9> *``<c-w>]<c-w>T<cr>
 
+" find in file
+nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_file.sh % <c-r>w<cr><cr>
+
 " find in project
-nnoremap <f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
+nnoremap <s-f10> *``viw"wy:!PATH=/bin ~/scripts/find_in_project.sh <c-r>w<cr><cr>
 
 
 map <f11> n<down><f2>

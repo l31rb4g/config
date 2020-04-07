@@ -17,13 +17,18 @@ export HISTCONTROL=ignorespace
 alias ls='ls --color'
 alias wo='workon'
 alias ag='ag --ignore tags --ignore *.sql'
+alias s='git status'
+alias go='git add .; git commit -am go; git push origin master'
 
 . $HOME/.git-prompt.sh
 
 # VIRTUALENVWRAPPER
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME=$HOME/.virtualenvs
+#source /usr/bin/virtualenvwrapper.sh
 
+# BASH COMPLETION
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion.sh ]] && \
+    source /usr/local/share/bash-completion/bash_completion.sh
 
 if [ $TERM == 'linux' ]; then
     PS1='[\u@\h \W]\$ '
@@ -33,9 +38,6 @@ else
 fi
 
 
-# BASH COMPLETION
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion.sh ]] && \
-    source /usr/local/share/bash-completion/bash_completion.sh
 
 
 # COLORED MANUALS
@@ -57,4 +59,4 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 export ANDROID_HOME=/home/l31rb4g/android
 
-export PATH=$PATH:/home/l31rb4g/flutter/bin
+export PATH=$PATH:/home/l31rb4g/flutter/bin:/home/l31rb4g/.local/bin

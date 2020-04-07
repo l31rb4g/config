@@ -1,5 +1,5 @@
 ! font
-*.font: xft:DejaVuSansMono:size=10
+*.font: xft:DejaVuSansMono:size=9
 
 ! special
 *.foreground:   #cccccc

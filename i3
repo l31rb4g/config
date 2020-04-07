@@ -218,6 +218,7 @@ bindsym $mod+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/i3-utils.sh blu
 
 # CSF1
 bindsym $mod+Control+Shift+F1 exec --no-startup-id /home/l31rb4g/scripts/selector.sh
+bindsym $mod+KP_Add exec --no-startup-id /home/l31rb4g/scripts/selector.sh
 
 # F2, F3, F4, SF4
 # VOLUME (LINUX PULSEAUDIO)
@@ -267,7 +268,8 @@ bindsym $mod+F10 exec --no-startup-id pavucontrol
 bindsym $mod+F11 exec --no-startup-id chromium -incognito
 
 # F12
-bindsym $mod+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
+bindsym $mod+F12 exec --no-startup-id ssh 192.168.1.13 bash /home/l31rb4g/toggle.sh
+bindsym $mod+Shift+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 
 # Screenshot
 bindsym --release Print exec --no-startup-id maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
