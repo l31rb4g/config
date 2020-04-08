@@ -7,4 +7,8 @@ xrandr --output DVI-I-3 --pos 1920x-400
 
 #feh --bg-max /home/l31rb4g/config/BeastieVsTux.jpeg -B "#1B1B1B"
 
+# gnome keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 exec i3
