@@ -240,6 +240,9 @@ bindsym $mod+Shift+F4 exec --no-startup-id pactl set-sink-volume 0 100%
 # SF2
 bindsym $mod+Shift+F2 exec firefox
 
+# CSF2
+bindsym $mod+Control+Shift+F2 exec google-chrome-stable --incognito
+
 
 # F5
 bindsym $mod+F5 exec --no-startup-id killall -19 firefox
@@ -251,11 +254,12 @@ bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/run_config
 bindsym $mod+F6 exec --no-startup-id killall -18 firefox
 
 # F7
-bindsym $mod+F7 exec --no-startup-id explorer start
-bindsym $mod+Shift+F7 exec --no-startup-id explorer stop
+bindsym $mod+F7 exec --no-startup-id (sleep 2 && curl http://grow:7000)&
 
 # F8
-bindsym $mod+F8 exec --no-startup-id timebox
+#bindsym $mod+F8 exec --no-startup-id timebox
+bindsym $mod+F8 exec --no-startup-id explorer start
+bindsym $mod+Shift+F8 exec --no-startup-id explorer stop
 
 # F9
 #bindsym $mod+F9 exec --no-startup-id pcmanfm
@@ -268,7 +272,7 @@ bindsym $mod+F10 exec --no-startup-id pavucontrol
 bindsym $mod+F11 exec --no-startup-id chromium -incognito
 
 # F12
-bindsym $mod+F12 exec --no-startup-id ssh 192.168.1.13 bash /home/l31rb4g/toggle.sh
+bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Shift+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 
 # Screenshot

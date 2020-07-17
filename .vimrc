@@ -9,7 +9,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'dracula/vim', {'as': 'dracula'}
     Plug 'Yggdroot/indentLine'
     "Plug 'Valloric/YouCompleteMe'
-    "Plug 'vim-syntastic/syntastic'
+    Plug 'vim-syntastic/syntastic'
     Plug 'michaeljsmith/vim-indent-object'
     Plug 'mattn/emmet-vim'
     Plug 'jdonaldson/vaxe'
@@ -23,6 +23,7 @@ call plug#end()
 syntax on
 color dracula
 
+set noswapfile
 set encoding=UTF-8
 set fileencoding=utf-8
 set expandtab
@@ -128,6 +129,8 @@ map <c-down> <c-e>
 " tabs
 map <c-s-left> gT
 map <c-s-right> gt
+"map <c-s-4> :tabmove -1
+"map <c-s-6> :tabmove +1
 
 
 " move line

@@ -9,13 +9,17 @@ CHARSET='UTF-8'
 export LANG=en_US.$CHARSET
 export LC_ALL=en_US.$CHARSET
 export MM_CHARSET=$CHARSET
+
+# history
 export HISTCONTROL=ignorespace
+export HISTTIMEFORMAT="%d/%m/%y %T "
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color'
 alias wo='workon'
+alias dc='docker-compose'
 alias ag='ag --ignore tags --ignore *.sql'
 alias s='git status'
 alias go='git add .; git commit -am go; git push origin master'
