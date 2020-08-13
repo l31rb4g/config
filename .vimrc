@@ -36,13 +36,14 @@ set hlsearch
 set nu
 set backspace=indent,eol,start
 set nofoldenable
-"set foldmethod=indent
-"set foldnestmax=1
 set clipboard=unnamedplus
 set colorcolumn=80
 set t_Co=256
 set conceallevel=0
 set completeopt-=preview
+
+set foldmethod=indent
+set foldnestmax=99
 
 
 let g:ycm_auto_trigger = 0
@@ -87,7 +88,8 @@ map <f1> viw"_s
 imap <f1> <esc>lviw"_s
 
 " folding
-map <f2> Viizf
+"map <f2> Viizf
+map <f2> za
 
 
 " nerdtree

@@ -190,15 +190,15 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    tray_output DVI-I-2
-    output DVI-I-2
+    tray_output DP-1
+    output DP-1
     font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
 
 bar {
     tray_output none
-    output DVI-I-3
+    output DVI-D-0
     font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py --vertical
 }
@@ -287,7 +287,7 @@ bindsym $mod+Tab exec --no-startup-id floyd
 ##############################
 # WORKSPACES
 ##############################
-workspace 10 output DVI-I-3
+workspace 10 output DVI-D-0
 #workspace 10 output VGA-1
 
 

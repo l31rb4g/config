@@ -13,4 +13,6 @@ export SSH_AUTH_SOCK
 
 xsettingsd &
 
+xmodmap -e "keycode 91 = period period"
+
 exec i3
