@@ -37,7 +37,7 @@ set nu
 set backspace=indent,eol,start
 set nofoldenable
 set clipboard=unnamedplus
-set colorcolumn=80
+set colorcolumn=100
 set t_Co=256
 set conceallevel=0
 set completeopt-=preview

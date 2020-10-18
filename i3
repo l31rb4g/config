@@ -18,12 +18,13 @@ set $mod Mod4
 #font xft:Source Code Pro 9
 font xft:DejaVuSansMono 8
 
-# Border style
+# Window specific style
 for_window [class="^.*"] border 1
 for_window [class="firefox"] border none
 for_window [class="Tor Browser"] border none
 for_window [class="Chromium"] border none
-for_window [title="Emulator"] floating enable; floating_maximum_size "607 x 1080"
+for_window [class="Google-chrome"] border none;
+#for_window [title="Emulator"] floating enable; floating_maximum_size "607 x 1080"
 #for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
 #for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
 #for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
@@ -53,8 +54,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec xterm
-#bindsym $mod+Return exec terminator
+#bindsym $mod+Return exec xterm
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill

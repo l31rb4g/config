@@ -23,6 +23,7 @@ alias dc='docker-compose'
 alias ag='ag --ignore tags --ignore *.sql'
 alias s='git status'
 alias go='git add .; git commit -am go; git push origin master'
+alias vim='bash /home/l31rb4g/scripts/run_vim'
 
 . $HOME/.git-prompt.sh
 
@@ -63,4 +64,4 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 export ANDROID_HOME=/home/l31rb4g/android
 
-export PATH=$PATH:/home/l31rb4g/flutter/bin:/home/l31rb4g/.local/bin
+export PATH=$PATH:/home/l31rb4g/.local/bin:/home/l31rb4g/www/stroller/bin
