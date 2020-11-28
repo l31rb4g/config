@@ -80,6 +80,11 @@ autocmd BufNewFile,BufRead *.sp    set syntax=cpp
 "augroup END
 
 
+
+nnoremap <Esc>[1;3D :tabmove -1<cr>
+nnoremap <Esc>[1;3C :tabmove +1<cr>
+
+
 " search highlight
 map ! :nohl<cr>
 map # *``

@@ -191,8 +191,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    tray_output DP-1
-    output DP-1
+    tray_output HDMI-0
+    output HDMI-0
     font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
@@ -252,7 +252,7 @@ bindsym $mod+F5 exec --no-startup-id killall -19 firefox
 bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/run_config.sh
 
 # F6
-bindsym $mod+F6 exec --no-startup-id killall -18 firefox
+bindsym $mod+F6 exec --no-startup-id heidisql
 
 # F7
 bindsym $mod+F7 exec --no-startup-id (sleep 2 && curl http://grow:7000)&
