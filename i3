@@ -191,8 +191,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    tray_output HDMI-0
-    output HDMI-0
+    tray_output DP-0
+    output DP-0
     font xft:DejaVuSansMono 10
     status_command /home/l31rb4g/scripts/i3status.py
 }
