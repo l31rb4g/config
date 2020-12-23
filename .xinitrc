@@ -13,4 +13,6 @@ xsettingsd &
 
 xmodmap -e "keycode 91 = period period"
 
+dunst &
+
 exec i3
