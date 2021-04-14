@@ -107,6 +107,8 @@ map <f4> :!~/scripts/tags.py<cr><cr>
 map <f5> :w<cr>
 imap <f5> <esc>:w<cr>
 
+map <f6> ysiw
+
 map <f7> :Autoformat<cr>
 
 map <f8> let @q="/^[^ }/\t].*{$<cr>kdk2kdK4"

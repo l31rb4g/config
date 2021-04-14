@@ -24,10 +24,9 @@ for_window [class="firefox"] border none
 for_window [class="Tor Browser"] border none
 for_window [class="Chromium"] border none
 for_window [class="Google-chrome"] border none;
-#for_window [title="Emulator"] floating enable; floating_maximum_size "607 x 1080"
-#for_window [class="Wine" instance="fireworks.exe" title="Macromedia Fireworks 8 - .*"] fullscreen; border normal
-#for_window [class="Wine" title="" instance="heidisql.exe"] move scratchpad
-#for_window [class="Wine" instance="heidisql.exe"] border none; move scratchpad
+for_window [class="heidisql.exe"] border none;
+for_window [class="Rambox"] border none;
+for_window [instance="fireworks.exe"] border none;
 
 
 # Colors
@@ -249,7 +248,7 @@ bindsym $mod+Control+Shift+F2 exec google-chrome-stable --incognito
 bindsym $mod+F5 exec --no-startup-id killall -19 firefox
 
 # SF5
-bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/run_config.sh
+bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/wasd.sh
 
 # F6
 bindsym $mod+F6 exec --no-startup-id heidisql
