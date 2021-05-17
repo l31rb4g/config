@@ -22,7 +22,7 @@ alias wo='workon'
 alias dc='docker-compose'
 alias ag='/usr/bin/env ag --ignore tags --ignore "*.sql"'
 alias s='git status'
-alias go='git add .; git commit -am go; git push origin master'
+alias go='git add .; git commit -am go; git push origin dev'
 alias vim='bash /home/l31rb4g/scripts/run_vim'
 
 . $HOME/.git-prompt.sh

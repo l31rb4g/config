@@ -45,6 +45,8 @@ set completeopt-=preview
 set foldmethod=indent
 set foldnestmax=99
 
+set autoread
+
 
 let g:ycm_auto_trigger = 0
 let mapleader = ','
@@ -68,7 +70,6 @@ autocmd FileType css setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType scss setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType xml setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType haxe setlocal colorcolumn=120
 autocmd FileType haxe setlocal colorcolumn=120
 
 autocmd BufNewFile,BufRead *.sp    set syntax=cpp
@@ -162,4 +163,6 @@ xnoremap p pgvy
 " Move visual block
 "vnoremap J :m '>+1<cr>gv=gv
 "vnoremap K :m '<-2<cr>gv=gv
+
+map <Leader>x :!chmod +x %<cr>
 

@@ -254,7 +254,7 @@ bindsym $mod+Shift+F5 exec --no-startup-id bash /home/l31rb4g/scripts/wasd.sh
 bindsym $mod+F6 exec --no-startup-id heidisql
 
 # F7
-bindsym $mod+F7 exec --no-startup-id (sleep 2 && curl http://grow:7000)&
+bindsym $mod+F7 exec --no-startup-id (sleep 2 && curl "http://grow:7000?pw=wwftw")&
 
 # F8
 bindsym $mod+F8 exec --no-startup-id ~/scripts/sound-switcher
@@ -279,6 +279,9 @@ bindsym --release Control+Print exec --no-startup-id ~/scripts/save_ss.sh
 
 # Tab
 bindsym $mod+Tab exec --no-startup-id floyd
+
+# Insert
+bindsym $mod+Insert exec --no-startup-id clipmenu
 
 
 
