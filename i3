@@ -274,7 +274,7 @@ bindsym $mod+F12 exec --no-startup-id i3lock -c 000000
 bindsym $mod+Shift+F12 exec --no-startup-id i3lock -c 000000 && systemctl suspend
 
 # Screenshot
-bindsym --release Print exec --no-startup-id maim -u -s --format=png /dev/stdout | xclip -i -selection clipboard -t image/png
+bindsym --release Print exec --no-startup-id ~/scripts/screenshot
 bindsym --release Control+Print exec --no-startup-id ~/scripts/save_ss.sh
 
 # Tab
